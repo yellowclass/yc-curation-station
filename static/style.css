@@ -1,0 +1,84 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+.sticky-input-container {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #f1f1f1;
+	padding: 10px;
+	box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+	display: flex;
+}
+.sticky-input {
+	flex: 1;
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+.send-button {
+	padding: 10px 20px;
+	margin-left: 10px;
+	font-size: 16px;
+	background-color: #4caf50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.send-button:disabled {
+	background-color: #ccc;
+	cursor: not-allowed;
+}
+.chat-container {
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	height: 90vh;
+	overflow: scroll;
+	margin: 0 auto;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	background-color: #f9f9f9;
+	margin-bottom: 60px;
+}
+.chat-message {
+	display: flex;
+	margin-bottom: 10px;
+}
+.chat-message.user {
+	justify-content: flex-end;
+}
+.chat-message.gpt {
+	justify-content: flex-start;
+}
+.message-content {
+	max-width: 45%;
+	padding: 10px;
+	border-radius: 10px;
+}
+.gpt-reply {
+	background-color: #e1f5fe;
+}
+.user-message {
+	background-color: #d1c4e9;
+}
+.profile-card {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 20px;
+	margin: 20px;
+	max-width: 500px;
+}
+
+.profile-card h2 {
+	margin-bottom: 10px;
+}
+
+.profile-card p {
+	margin-bottom: 15px;
+}
