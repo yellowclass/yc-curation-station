@@ -29,7 +29,7 @@ pre-commit install
 ## Starting the server in virtual env
 
 ```sh
-source ./env/bin/activate && nodemon --exec python3 --ext py app.py
+source ./env/bin/activate && nodemon --exec python3 --ext py index.py
 ```
 
 # Auto Formatter
